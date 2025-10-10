@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>CSI 2999 Project 2</title>
+        <link rel="icon" type="image/png" href="/gameImages/faviconGame.png" />
+        <link rel="stylesheet" href="gameStyle.css" />
+    </head>
+    <body>
+        <div class="gameScreen">
+            <div id="exit">
+                <div id="livesDisplay"></div>
+                <div class="exitButtons">
+                    <div id="backButton">
+                        <a href="play.html">←</a>
+                    </div>
+                    <a href="https://www.google.com">X</a>
+                </div>
+            </div>
+
+            <div id="gameBoard"></div>
+
+            <div id="winMessage">
+                <h1>Congratulations</h1>
+                <h2>YOU WIN!</h2>
+                <div class="buttons">
+                    <button onclick="replay()">replay</button>
+                </div>
+            </div>
+
+            <div id="gameOver">
+                <h1>Game Over</h1>
+                <h2>TRY AGAIN!</h2>
+                <div class="buttons">
+                    <button onclick="replay()">replay</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.gameDifficulty = "easy";
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
